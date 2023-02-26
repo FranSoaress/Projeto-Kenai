@@ -1,0 +1,27 @@
+@import url(style/header.css);
+@import url(style/main.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --cor-fundo: #181818;
+    --cor-titulo: #F9F9F9;
+    --cor-secundaria: #A8A8A8;
+    --cor-botao: #1c1c1c;
+
+    --fonte-principal: 'Open Sans', sans-serif;
+}
+
+body{
+    grid-template-rows: auto;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 768px){
+
+}

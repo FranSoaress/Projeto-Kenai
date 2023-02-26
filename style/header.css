@@ -1,0 +1,42 @@
+/* Cabeçalho de apresentação */
+
+.cabecalho .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.tela__loggin__logo__marca {
+    height: 6%;
+    margin-top: 2%;
+}
+
+.tela__loggin__horario {
+    color: var(--cor-titulo);
+    font-weight: 300;
+    font-size: 2rem;
+    width: 10%;
+    height: 5%;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .tela__loggin__logo__marca {
+        margin-top: 8%;
+        margin-bottom: 7%;
+    }
+
+    .tela__loggin__horario {
+        display: none;
+    }
+}

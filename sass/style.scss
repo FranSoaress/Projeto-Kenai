@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Open+Sans:wght@600&display=swap");
+
+@import "./home/resetPage/reset.scss";
+
+@import "./home/background/banner.scss";
+
+@import "./home/navbar/nav.scss";
+
+@import "./home/star/star.scss";
+
+@import "./home/carousel/carrossel.scss";
+
+@import "./home/socialNetwork/social.scss";
+
+.rodape {
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 23vh;
+    background-color: #070707;
+    p.colorWhite {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Open sans", sans-serif;
+    }
+    p {
+        width: 310px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 2px;
+        a.roxo {
+            color: blueviolet;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: "Open sans", sans-serif;
+            &:hover {
+                color: #eee;
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    &.activeModal {
+        display: block;
+    }
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        max-width: auto;
+        max-height: auto;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            span {
+                font-size: 2em;
+                font-weight: bold;
+                color: #ff0000;
+                line-height: 20px;
+            }
+        }
+        #video {
+            width: 580px;
+            height: 325px;
+            border-radius: 10px;
+        }
+    }
+}

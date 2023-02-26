@@ -1,0 +1,173 @@
+/* Titulos de apresentação */
+
+.tela__loggin__titulo__principal {
+    text-align: center;
+    padding: 02% 10% 0% 10%;
+    color: var(--cor-titulo);
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.tela__loggin__texto__principal {
+    text-align: center;
+    padding: 02% 10% 0% 10%;
+    color: var(--cor-titulo);
+    font-weight: 300;
+    font-size: 2.75rem;
+}
+
+/* Foto dos perfis */
+
+.tela__loggin__usuarios__perfil {
+    margin: 10em 10em 0 10em;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+
+.tela__loggin__usuarios__perfil img:hover {
+    transform: scale(1.1);
+}
+
+/* Nomes dos perfis */
+
+.tela__nomes__usuarios {
+    font-family: var(--fonte-principal);
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    text-align: center;
+    margin: 03em 10em 0 10em;
+}
+
+.tela__nomes__usuarios :hover {
+    transform: scale(1.1);
+}
+
+/* Botão de adicionar */
+
+.tela__usuarios__novos {
+    display: flex;
+    justify-content: center;
+}
+
+.tela__loggin__usuarios__novos {
+    background-color: var(--cor-botao);
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--cor-titulo);
+    text-align: center;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 5%;
+}
+
+.tela__usuarios__novos :hover {
+    transform: scale(1.1);
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .corpo__projeto {
+        max-height: 1000px;
+    }
+
+    /* Titulos de apresentação */
+
+    .tela__loggin {
+        width: 100%;
+        margin: 2%;
+        padding: 1px;
+        border: 0;
+    }
+
+    .tela__loggin__container__secundario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tela__loggin__titulo__principal {
+        font-weight: 400;
+        font-size: 1.25rem;
+        text-align: center;
+        flex-wrap: nowrap;
+        margin-top: 10vh;
+        width: 100%;
+        height: 27px;
+    }
+
+    .tela__loggin__texto__principal {
+        font-weight: 300;
+        font-size: 1.12rem;
+        text-align: center;
+        flex-wrap: nowrap;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        width: 100%;
+        height: 25px;
+    }
+    /* Perfil usuarios */
+
+    /* Imagens usuarios */
+
+    .tela__usuarios {
+        height: 560px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .tela__loggin__usuarios__perfil {
+        margin: 3%;
+        height: 560px;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 80px;
+    }
+
+    /* Nomes usuarios */
+
+    .tela__nomes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        bottom: 370px;
+    }
+
+    .tela__nomes__usuarios {
+        margin: 3%;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 240px;
+        text-align: center;
+    }
+
+    /* Novos usuarios */
+
+    .tela__novos {
+        /* display: flex; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .tela__usuarios__novos {
+        margin: 3%;
+        flex-wrap: nowrap;
+        position: relative;
+        bottom: 290px;
+    }
+}

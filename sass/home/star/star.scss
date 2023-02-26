@@ -1,0 +1,107 @@
+.starStyle {
+    position: relative;
+    top: 30%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 2rem;
+    gap: 1em;
+    height: 50vh;
+
+    .text {
+        width: 50px;
+        background-color: #181818;
+        text-align: center;
+        border-radius: 0px 8px;
+        line-height: 10px;
+        padding: 5px;
+        user-select: all;
+    }
+    .star {
+        position: relative;
+        left: -11px;
+        display: flex;
+        align-items: center;
+        .relogio {
+            margin-left: 0.8em;
+        }
+    }
+    #hours {
+        margin-left: 0.5em;
+        font-size: 1.2em;
+        color: #fff;
+        padding-bottom: 0.2em;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .title {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 56px;
+        color: #fff;
+    }
+    .titleDescript {
+        width: 536px;
+        height: 84px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #f9f9f9;
+    }
+    .btn {
+        margin-top: 3em;
+        width: 286px;
+        padding: 8px;
+        background: #ffa634;
+        border-radius: 4px;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        box-shadow: none;
+        transition: 0.5s all ease-in-out;
+        transform: scale(1);
+        z-index: 1;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 25px #ffa634;
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .star {
+        width: 35px;
+        img {
+            width: 100%;
+        }
+    }
+    #hours {
+        min-width: 50px !important;
+        text-align: center !important;
+        font-size: 16px !important;
+    }
+    .title {
+        font-size: 32px !important;
+    }
+    .titleDescript {
+        width: 88% !important;
+        height: auto !important;
+        font-size: 22px !important;
+    }
+    .btn {
+        width: 90% !important;
+        margin: 2em 0px auto 0px !important;
+        font-size: 16px !important;
+        height: 0px;
+        padding: 30px 30px !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
